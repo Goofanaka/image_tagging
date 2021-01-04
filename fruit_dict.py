@@ -104,7 +104,10 @@ def fruit_check(title):
 
         elif "배" in text[1]:
             tags.append("pear")
-    
+
+        else:
+            tags.append("fruit_etc")
+
         fruit_list.append(tags)
     
     return fruit_list
