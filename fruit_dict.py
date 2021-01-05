@@ -9,7 +9,7 @@ def fruit_check(title):
         if "사과" in text[1]:
             tags.append("apple")
 
-        elif ("단감" in text[1]) or ("곶감" in text[1]) or ("반건시" in text[1]) or ("홍시" in text[1]) or ("감말랭이" in text[1]):
+        elif ("단감" in text[1]) or ("곶감" in text[1]) or ("반건시" in text[1]) or ("홍시" in text[1]) or ("감말랭이" in text[1]) or ("대봉감" in text[1]):
             tags.append("persimmon")
 
         elif ("감귤" in text[1]) or ("오렌지" in text[1]) or ("레드향" in text[1]) or ("한라봉" in text[1]) or ("천혜향" in text[1]) or ("황금향" in text[1]) or ("유자" in text[1]) or ("홍미향" in text[1]):
@@ -85,13 +85,19 @@ def fruit_check(title):
             tags.append("avocado")
 
         elif "파파야" in text[1]:
-            tags.append("papadya")
+            tags.append("papaya")
+
+        elif "모과" in text[1]:
+            tags.append("quince")
 
         elif "코코넛" in text[1]:
             tags.append("coconut")
 
         elif "자두" in text[1]:
             tags.append("plum")
+
+        elif "용안" in text[1]:
+            tags.append("dimocarpus longan")
 
         elif ("자몽" in text[1]) or ("메로골드" in text[1]):
             tags.append("grapefruit")
