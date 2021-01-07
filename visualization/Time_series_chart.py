@@ -39,4 +39,3 @@ def Full_time_series_data():
     # plt.legend(title='fruit', loc='center left', bbox_to_anchor=(1, 0.5))
     # plt.savefig('Full_time_series_data2.png', dpi=300)
 
-Full_time_series_data()

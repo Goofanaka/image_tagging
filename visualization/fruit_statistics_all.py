@@ -36,4 +36,3 @@ def fruit_statistics_all():
 
 
 
-fruit_statistics_all()
