@@ -34,5 +34,3 @@ def fruit_statistics_all():
                  verticalalignment='bottom')
     plt.savefig('fruit_statistics_all.png', dpi=300)
 
-
-

@@ -38,4 +38,3 @@ def Full_time_series_data():
     # plt.ylabel("날짜", fontsize=12)
     # plt.legend(title='fruit', loc='center left', bbox_to_anchor=(1, 0.5))
     # plt.savefig('Full_time_series_data2.png', dpi=300)
-
