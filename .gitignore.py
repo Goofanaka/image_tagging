@@ -19,6 +19,9 @@ my_setting.py
 *.csv
 *.txt
 images/
+*.png
+*.jpg
+*.jpeg
 
 
 # External tool builders
