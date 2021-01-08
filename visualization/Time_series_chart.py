@@ -29,12 +29,4 @@ def Full_time_series_data():
     plt.title("날짜별 과일 수량" ,fontsize=18)
     plt.xlabel("날짜", fontsize=12,)
     plt.legend(title='fruit', loc='center left', bbox_to_anchor=(1.05, 0.5))
-    plt.savefig('Full_time_series_data1.png', dpi=300)
-
-    #bar chart
-    # plt.rc('font', family='Malgun Gothic')
-    # df3.plot(kind='barh', stacked=True)
-    # plt.title("날짜별 과일 수량", fontsize=18)
-    # plt.ylabel("날짜", fontsize=12)
-    # plt.legend(title='fruit', loc='center left', bbox_to_anchor=(1, 0.5))
-    # plt.savefig('Full_time_series_data2.png', dpi=300)
+    plt.savefig('Full_time_series_data1.png', dpi=300, bbox_inches='tight')

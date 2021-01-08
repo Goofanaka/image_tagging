@@ -16,7 +16,8 @@ def fruit_statistics_all():
     for i in tagdata_all:
         fruit_list.append(i.title_tag[0])
     fruit_dict = collections.Counter(fruit_list)  # 특정값들을 카운트해서 딕셔너리로 변경
-    df = pd.DataFrame({'fruit': fruit_dict.keys(), 'count': fruit_dict.values()}).sort_values(by='count',ascending=False).reset_index(drop=True)
+    df = pd.DataFrame({'fruit': fruit_dict.keys(), 'count': fruit_dict.values()})
+    df_sort = df.sort_values(by='count',ascending=False).reset_index(drop=True)
     color = sns.color_palette('hls', len(fruit_dict))
     plt.figure(figsize=(30, 10))
     plt.rc('font', family='Malgun Gothic')
@@ -25,12 +26,11 @@ def fruit_statistics_all():
     plt.xlabel("과일", fontsize=12)
     plt.yticks(fontsize=12)
     plt.xticks(rotation=60)
-    plt.bar(df['fruit'], df['count'], align='center', color=color)
-    for i, v in enumerate(df['fruit']):
-        plt.text(v, df['count'][i], df['count'][i],
+    plt.bar(df_sort['fruit'], df_sort['count'], align='center', color=color)
+    for i, v in enumerate(df_sort['fruit']):
+        plt.text(v, df_sort['count'][i], df_sort['count'][i],
                  fontsize=10,
                  color='black',
                  horizontalalignment='center',
                  verticalalignment='bottom')
     plt.savefig('fruit_statistics_all.png', dpi=300)
-
