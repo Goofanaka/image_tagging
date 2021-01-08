@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 def correct_answerd():
     google_list = []
-    kakao_list = []
+    kakao_list  = []
 
     tagdata_r = tagdata.Tagdata.objects()
     for i in tagdata_r:
@@ -43,12 +43,11 @@ def correct_answerd():
     plt.ylim(0,100)
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=12)
-    plt.bar(df['API'], df['percent'],align='center', color=['royalblue','gold'])
+    plt.bar(df['API'], df['percent'],align='center', color=['royalblue','gold'], width=0.2)
     for i,v in enumerate(df['API']):
         plt.text(v, df['percent'][i], df['percent'][i],
                 fontsize = 15, 
                 color='black',
                 horizontalalignment='center',
                 verticalalignment='bottom')
-    plt.show()
-    plt.savefig('correct_answerd.png')
+    plt.savefig('correct_answerd.png', dpi=300, bbox_inches='tight')
