@@ -43,7 +43,7 @@ def correct_answerd():
     plt.ylim(0,100)
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=12)
-    plt.bar(df['API'], df['percent'],align='center', color=['royalblue','gold'], width=0.2)
+    plt.bar(df['API'], df['percent'],align='center', color=['royalblue','gold'])
     for i,v in enumerate(df['API']):
         plt.text(v, df['percent'][i], df['percent'][i],
                 fontsize = 15, 
