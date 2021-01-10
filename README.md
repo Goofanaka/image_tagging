@@ -1,11 +1,11 @@
-# 1. 프로젝트명 
+# 1. Image Tag Analysis Project
+ 
 * 개요 : 소셜이커머스 1위인 쿠팡의 과일 이미지를 크롤링하여 이미지 기반 분석 프로그램을 제작함
 * 팀명 : Goofenaka 팀원 : 손기훈 김동건 유주아 김은찬
 * 개발 기간 : 2020년 12월 22일 ~ 2021년 1월 10일
 ___
 
-# 2. 프로젝트 정보
-##	1.Technologies(해더2)
+# 2. Technologies
 - 개발언어 : python
 - 크롤링 : Beautifulsoup 
 - 데이터베이스 : MongoDB,Mongoengine
@@ -28,7 +28,8 @@ ___
 
 ___
 
-#4. 사용방법(해더2)
+#4. Execution Environment
+
 
 ##1.python 필요 라이브러리 설치
 - Open CV
