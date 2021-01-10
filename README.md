@@ -28,10 +28,9 @@ ___
 
 ___
 
-#4. Execution Environment
-
-
-##1.python 필요 라이브러리 설치
+# 4. Execution Environment
+## 1.python 필요 라이브러리 설치
+- python 가상환경 구현
 - Open CV
 - Beautiful Soup
 - pandas
@@ -40,8 +39,7 @@ ___
 - PyQT5
 - mongoengine(pymongo,dnspython)
 
-##2.개인 환경 구성
-- python 가상환경 구현
+## 2.개인 key 
 - 카카오 비전 API 키
 - 구글 비전 Credentials 파일(json)
 - user-agent 입력
