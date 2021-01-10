@@ -1,6 +1,6 @@
 from mongoengine import *
 
-connect('image_tag_data', 'default', host="mongodb+srv://GFNK:GFNK@gufanaka.orv7h.mongodb.net/image_tag_data?retryWrites=true&w=majority")
+connect('image_tag_data', alias = 'default', host="mongodb+srv://GFNK:GFNK@gufanaka.orv7h.mongodb.net/image_tag_data?retryWrites=true&w=majority")
 
 class Image(Document):
     name = StringField(unique=True, required=True)
