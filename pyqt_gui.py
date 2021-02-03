@@ -21,7 +21,7 @@ import time
 import tagdata
 import img_to_mongo
 import dict_json
-import fruit_statistics
+from visualization import fruit_statistics
 import my_setting
 import shutil
 
