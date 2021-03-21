@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-
+#과일전체누적빈도분석함수
 def fruit_statistics_all():
     fruit_list = []
     tagdata_all = tagdata.Tagdata.objects()
